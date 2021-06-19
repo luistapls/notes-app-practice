@@ -22,7 +22,7 @@ class SignIn extends React.Component<Props, State> {
 	handleSubmit(event: any) {
 		event.preventDefault();
 		this.setState({
-			isSubmitted: true,
+			isSubmitted: !this.state.isSubmitted,
 		});
 	}
 
